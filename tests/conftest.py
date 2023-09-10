@@ -12,7 +12,7 @@ def base_url():
 
 
 @pytest.fixture(scope="function")
-def api_client_and_base_url():
+def api_client():
     """
     Фикстура для создания клиента API .
     """
