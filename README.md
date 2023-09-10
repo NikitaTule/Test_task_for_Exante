@@ -1,17 +1,17 @@
 
 
-#Введение
+# Содержание #
 * [Тестовое задание от компании Exante](https://github.com/NikitaTule/Test_task_for_Exante#%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8-exante)
 * [Решение](https://github.com/NikitaTule/Test_task_for_Exante#%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5)
-  - Какое API было использовано
-  - Структура репозитория
+  - [Какое API было использовано](https://github.com/NikitaTule/Test_task_for_Exante#%D0%BE%D1%82%D1%80%D0%BA%D1%82%D0%BE%D0%B5-api-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B5-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE)
+  - [Структура репозитория](https://github.com/NikitaTule/Test_task_for_Exante#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F)
     - ```Base```
       - ```Basic_API_methods.py```
     - ``` tests.py ```
       - ```conftest.py```
-      - Что проверяют тесты из```get_tests.py```
-      - Что проверяют тесты из```post_tests.py```
-      - Что проверяют тесты из```put_tests.py```
+      - [Что проверяют тесты из```get_tests.py```](https://github.com/NikitaTule/Test_task_for_Exante#%D1%87%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%8E%D1%82-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%B8%D0%B7-get_testspy)
+      - [Что проверяют тесты из```post_tests.py```](https://github.com/NikitaTule/Test_task_for_Exante#%D1%87%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%8E%D1%82-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%B8%D0%B7-post_testspy)
+      - [Что проверяют тесты из```put_tests.py```](https://github.com/NikitaTule/Test_task_for_Exante#%D1%87%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%8E%D1%82-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%B8%D0%B7-post_testspy-1) 
 
 
 # Тестовое задание от компании Exante #   
@@ -28,7 +28,7 @@
 RESTful API -  (https://jsonplaceholder.typicode.com/)
 #### Структура репозитория: ####
 
-```Base``` - в данном пакете находятся базовые модули с классами и методами для переиспользования в тестах или других модулях или классах.
+[```Base```](https://github.com/NikitaTule/Test_task_for_Exante/tree/master/Base) - в данном пакете находятся базовые модули с классами и методами для переиспользования в тестах или других модулях или классах.
 
 ```Basic_API_methods.py``` - в этом модуле содержится класс с базовыми методами api запросов.
 
@@ -72,7 +72,7 @@ RESTful API -  (https://jsonplaceholder.typicode.com/)
 Обратите внимание, что эти тесты скорее всего будут полезными в контексте реального API, где можно проверить, что созданный ресурс действительно сохраняется и может быть удален. 
 В текущем контексте API JSONPlaceholder, который предоставляет тестовые данные, это не всегда возможно из-за ограничений API.
 
-### Что проверяют тесты из post_tests.py ###
+### Что проверяют тесты из put_tests.py ###
 
 
 1. ``test_update_user``:
