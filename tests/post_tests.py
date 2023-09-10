@@ -5,12 +5,12 @@ from Base.Basic_API_methods import BaseMetods
 class TestsPost:
 
     @pytest.fixture
-    def preconditions(self, api_client, base_url):
-        return api_client, base_url
+    def preconditions(self, base_url):
+        self.base_url = base_url
 
     @pytest.fixture
     def postconditions(self, preconditions):
-        api_client, base_url = preconditions
+        base_url = preconditions
 
         # Метод для удаления пользователя или другой созданой информации
         def _delete_resource(resource_type, resource_id):
@@ -20,8 +20,6 @@ class TestsPost:
         return _delete_resource
 
     def test_create_user(self, preconditions, postconditions):
-        api_client, base_url = preconditions
-
         # Подготовка данных для создания нового пользователя
         user_data = {
             'name': 'TEST',
@@ -30,7 +28,7 @@ class TestsPost:
         }
 
         # Отправка POST запроса для создания пользователя с использованием статического метода
-        status_code, response = BaseMetods.send_post_request(f"{base_url}", "users", user_data)
+        status_code, response = BaseMetods.send_post_request(f"{self.base_url}", "users", user_data)
 
         # Проверка, что ответ имеет статус-код 201 (успешное создание)
 
@@ -51,8 +49,6 @@ class TestsPost:
         # postconditions("users", created_user_id)
 
     def test_create_post(self, preconditions, postconditions):
-        api_client, base_url = preconditions
-
         # Подготовка данных для создания нового поста
         post_data = {
             'userId': 1,
@@ -61,7 +57,7 @@ class TestsPost:
         }
 
         # Отправка POST запроса для создания поста
-        status_code, response = BaseMetods.send_post_request(f"{base_url}", "posts", post_data)
+        status_code, response = BaseMetods.send_post_request(f"{self.base_url}", "posts", post_data)
 
         # Проверка, что ответ имеет статус-код 201 (успешное создание)
         assert status_code == 201
@@ -78,8 +74,6 @@ class TestsPost:
         # postconditions("posts", created_post_id)
 
     def test_create_comment(self, preconditions, postconditions):
-        api_client, base_url = preconditions
-
         # Подготовка данных для создания нового комментария
         comment_data = {
             'postId': 1,
@@ -89,7 +83,7 @@ class TestsPost:
         }
 
         # Отправка POST запроса для создания комментария
-        status_code, response = BaseMetods.send_post_request(f"{base_url}", "comments", comment_data)
+        status_code, response = BaseMetods.send_post_request(f"{self.base_url}", "comments", comment_data)
 
         # Проверка, что ответ имеет статус-код 201 (успешное создание)
         assert status_code == 201
