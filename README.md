@@ -11,8 +11,8 @@
       - ```conftest.py```
       - [Что проверяют тесты из```get_tests.py```](https://github.com/NikitaTule/Test_task_for_Exante#%D1%87%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%8E%D1%82-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%B8%D0%B7-get_testspy)
       - [Что проверяют тесты из```post_tests.py```](https://github.com/NikitaTule/Test_task_for_Exante#%D1%87%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%8E%D1%82-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%B8%D0%B7-post_testspy)
-      - [Что проверяют тесты из```put_tests.py```](https://github.com/NikitaTule/Test_task_for_Exante#%D1%87%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%8E%D1%82-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%B8%D0%B7-post_testspy-1) 
-
+      - [Что проверяют тесты из```put_tests.py```](https://github.com/NikitaTule/Test_task_for_Exante#%D1%87%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%8E%D1%82-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%B8%D0%B7-post_testspy-1)
+    - [``requirements.txt``]()
 
 # Тестовое задание от компании Exante #   
 
@@ -30,13 +30,13 @@ RESTful API -  (https://jsonplaceholder.typicode.com/)
 
 [```Base```](https://github.com/NikitaTule/Test_task_for_Exante/tree/master/Base) - в данном пакете находятся базовые модули с классами и методами для переиспользования в тестах или других модулях или классах.
 
-```Basic_API_methods.py``` - в этом модуле содержится класс с базовыми методами api запросов.
+[```Basic_API_methods.py```](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/Base/Basic_API_methods.py) - в этом модуле содержится класс с базовыми методами api запросов.
 
-```conftest.py``` - модуль содержит фикстуры/фистуру, которая передается в каждый тест
+[```conftest.py```](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/conftest.py) - модуль содержит фикстуры/фистуру, которая передается в каждый тест
 
-``` tests.py ``` - в этой директории находятся все тесты и и фикстуры для них
+[``` tests.py ```](https://github.com/NikitaTule/Test_task_for_Exante/tree/master/tests) - в этой директории находятся все тесты и и фикстуры для них
 
-### Что проверяют тесты из get_tests.py ###
+[### Что проверяют тесты из get_tests.py ###](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/get_tests.py)
 С точки зрения функционального тестирования, эти тесты проверяют следующее:
 
 1. ```test_get_user```: Проверяет, что API может успешно возвращать данные о пользователе по его ID. Этот тест может быть важным, если ваше приложение зависит от данных пользователей и требует правильного их получения.
@@ -45,7 +45,7 @@ RESTful API -  (https://jsonplaceholder.typicode.com/)
 
 3. ```test_get_comments```: Проверяет, что API может успешно возвращать список комментариев к конкретному посту. Этот тест может быть важным, если ваше приложение отображает комментарии к постам и требует правильного их получения.
 
-### Что проверяют тесты из post_tests.py ###
+[### Что проверяют тесты из post_tests.py ###](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/post_tests.py)
 
 
 Эти тесты проверяют следующее:
@@ -72,7 +72,7 @@ RESTful API -  (https://jsonplaceholder.typicode.com/)
 Обратите внимание, что эти тесты скорее всего будут полезными в контексте реального API, где можно проверить, что созданный ресурс действительно сохраняется и может быть удален. 
 В текущем контексте API JSONPlaceholder, который предоставляет тестовые данные, это не всегда возможно из-за ограничений API.
 
-### Что проверяют тесты из put_tests.py ###
+[### Что проверяют тесты из put_tests.py ###](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/put_tests.py)
 
 
 1. ``test_update_user``:
@@ -93,3 +93,8 @@ RESTful API -  (https://jsonplaceholder.typicode.com/)
 Они также обеспечивают базовую проверку статус-кодов ответов API для PUT-запросов.
 Обратите внимание, что эти тесты скорее всего будут полезными в контексте реального API, где можно проверить, что созданный ресурс действительно изменяются. 
 В текущем контексте API JSONPlaceholder, который предоставляет тестовые данные, это не всегда возможно из-за ограничений API.
+
+### Что было установлено  [``requirements.txt``](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/requirements.txt) ###
+* pytest
+* requests
+

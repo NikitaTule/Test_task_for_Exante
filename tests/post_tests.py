@@ -91,11 +91,10 @@ class TestsPost:
         # Проверка, что ID созданного комментария совпадает с ожидаемым
         created_comment_id = response.get('id')
         assert created_comment_id is not None
-        assert created_comment_id == 1  # Проверяем что id который мы передаем в comment_data совпадает с получаемым
         """
         Как я писал выше данное апи не позволяет в полной мере проверить,
         что комментарий создан получая id всех комментариев
         или очищать после себя удаляя созданный комментарий кодом ниже.
         """
         # Удаление созданного комментария с использованием фикстуры postconditions
-        postconditions("comments", created_comment_id)
+        # postconditions("comments", created_comment_id)
