@@ -72,7 +72,7 @@ RESTful API -  (https://jsonplaceholder.typicode.com/)
 Обратите внимание, что эти тесты скорее всего будут полезными в контексте реального API, где можно проверить, что созданный ресурс действительно сохраняется и может быть удален. 
 В текущем контексте API JSONPlaceholder, который предоставляет тестовые данные, это не всегда возможно из-за ограничений API.
 
-### [Что проверяют тесты из put_tests.py] ###(https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/put_tests.py)
+### [Что проверяют тесты из put_tests.py] (https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/put_tests.py)
 
 
 1. ``test_update_user``:
