@@ -36,7 +36,7 @@ RESTful API -  (https://jsonplaceholder.typicode.com/)
 
 [``` tests.py ```](https://github.com/NikitaTule/Test_task_for_Exante/tree/master/tests) - в этой директории находятся все тесты и и фикстуры для них
 
-[### Что проверяют тесты из get_tests.py ###](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/get_tests.py)
+### [Что проверяют тесты из get_tests.py](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/get_tests.py) ###
 С точки зрения функционального тестирования, эти тесты проверяют следующее:
 
 1. ```test_get_user```: Проверяет, что API может успешно возвращать данные о пользователе по его ID. Этот тест может быть важным, если ваше приложение зависит от данных пользователей и требует правильного их получения.
@@ -45,7 +45,7 @@ RESTful API -  (https://jsonplaceholder.typicode.com/)
 
 3. ```test_get_comments```: Проверяет, что API может успешно возвращать список комментариев к конкретному посту. Этот тест может быть важным, если ваше приложение отображает комментарии к постам и требует правильного их получения.
 
-[### Что проверяют тесты из post_tests.py ###](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/post_tests.py)
+### [Что проверяют тесты из post_tests.py](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/post_tests.py) ###
 
 
 Эти тесты проверяют следующее:
@@ -72,7 +72,8 @@ RESTful API -  (https://jsonplaceholder.typicode.com/)
 Обратите внимание, что эти тесты скорее всего будут полезными в контексте реального API, где можно проверить, что созданный ресурс действительно сохраняется и может быть удален. 
 В текущем контексте API JSONPlaceholder, который предоставляет тестовые данные, это не всегда возможно из-за ограничений API.
 
-### [Что проверяют тесты из put_tests.py] (https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/put_tests.py)
+
+### [Что проверяют тесты из put_tests.py](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/tests/put_tests.py) ###
 
 
 1. ``test_update_user``:
