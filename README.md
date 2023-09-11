@@ -94,7 +94,7 @@ RESTful API -  (https://jsonplaceholder.typicode.com/)
 Обратите внимание, что эти тесты скорее всего будут полезными в контексте реального API, где можно проверить, что созданный ресурс действительно изменяются. 
 В текущем контексте API JSONPlaceholder, который предоставляет тестовые данные, это не всегда возможно из-за ограничений API.
 
-### Что было установлено  [``requirements.txt``](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/requirements.txt) ###
+### [Что было установлено  ``requirements.txt``](https://github.com/NikitaTule/Test_task_for_Exante/blob/master/requirements.txt) ###
 * pytest
 * requests
 
